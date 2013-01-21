@@ -13,10 +13,10 @@
 
 ;;; review 'apply-generic'
 (define (apply-generic op . args)
-  (let ((type-tags (map type-tag args)))
-    (let ((proc (get op type-tags)))
-      (if proc
-          (apply proc (map contents args))
+  (let ((type-tags (map type-tag args)))   ;;; Get the types of arguments.
+    (let ((proc (get op type-tags)))       ;;; Search the operation according to 
+      (if proc                             ;;; according to the types of arguments.
+          (apply proc (map contents args)) ;;; Apply the operation to contents.
           (error
             "No method for these types -- APPLY-GENERIC"
             (list op type-tags))))))
