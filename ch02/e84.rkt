@@ -51,3 +51,5 @@
 ; A better way is to find the common higher type for both two arguments.
 ; One way to do this is that trying to raise t1 to every higher types of 
 ; t2 in the tower.
+
+;;;;
