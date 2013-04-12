@@ -47,3 +47,10 @@
 
 (define (try-coercion op args type-tags)
   (iter-coerce op type-tags type-tags args))
+
+
+; However, this way can only use a one-time coercion, 
+; for example, for the case t1->t2, t2->t3 and the 
+; types of arguments are t1, t2, t3, it is not 
+; possible to change all types to t3 uniformly by 
+; using the above approach.
