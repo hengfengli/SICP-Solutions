@@ -1,5 +1,5 @@
 #lang scheme
-
+; 
 ; Try to let complex number's real, imaginary, magnitudes,
 ; and angles, being able to be represented by
 ; ordinary numbers and rational numbers.
