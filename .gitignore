@@ -1,3 +1,4 @@
 *.ss~
 .DS_Store
 *.rkt~
+practice/*
